@@ -1,3 +1,9 @@
+/**
+* Template Name: Multi - v4.7.0
+* Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 (function() {
   "use strict";
 
@@ -75,7 +81,7 @@
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
-   
+   */
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
@@ -88,7 +94,6 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
-  */
 
   /**
    * Back to top button
@@ -108,13 +113,12 @@
 
   /**
    * Mobile nav toggle
-   
+   */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
-  */
 
   /**
    * Mobile nav dropdowns activate
@@ -147,14 +151,14 @@
 
   /**
    * Scroll with ofset on page load with hash links in the url
-  
+   */
   window.addEventListener('load', () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
         scrollto(window.location.hash)
       }
     }
-  });*/
+  });
 
 
   /**
@@ -204,7 +208,7 @@
   });
 
   /**
-   * Portfolio isotope and filter
+   * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
@@ -233,6 +237,7 @@
     }
 
   });
+
   /**
    * Initiate portfolio lightbox 
    */
